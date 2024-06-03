@@ -43,7 +43,7 @@ const TableComponent = () => {
 
     const coin_data = {coin_info};
 
-    fetch('http://34.16.0.31:8080/api/save_csv', {
+    fetch('https://backend-dot-rapid-compound-410705.el.r.appspot.com/api/save_csv', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -64,7 +64,7 @@ const TableComponent = () => {
   
 
   useEffect(() => {
-    const apiUrl = 'http://34.16.0.31:8080/api/get_coins';
+    const apiUrl = 'https://backend-dot-rapid-compound-410705.el.r.appspot.com/api/get_coins';
 
     fetch(apiUrl)
       .then(response => {
